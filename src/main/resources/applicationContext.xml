@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 定义 Cat Bean -->
+<!--    在 XML 配置中，如果没有显式指定 name 属性，id 会被默认作为 name 的值-->
+    <bean id="cat" class="com.example.daily.entity.Cat">
+        <!-- 设置 Cat 的 name 属性 -->
+        <property name="name" value="Tom"/>
+    </bean>
+
+    <!-- 定义 Dog Bean -->
+    <bean id="dog" class="com.example.daily.entity.Dog">
+        <!-- 设置 Dog 的 name 属性 -->
+        <property name="name" value="Spike"/>
+    </bean>
+
+    <!-- 定义 People Bean -->
+    <bean id="people" class="com.example.daily.entity.People">
+        <!-- 设置 People 的 name 属性 -->
+        <property name="name" value="张三"/>
+        <!-- 注入 Cat 和 Dog Bean -->
+<!--        <property name="cat" ref="cat"/>-->
+<!--        <property name="dog" ref="dog"/>-->
+    </bean>
+
+</beans>
