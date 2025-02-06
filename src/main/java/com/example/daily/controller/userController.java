@@ -1,7 +1,7 @@
 package com.example.daily.controller;
 
 
-import com.example.daily.entity.ResponseMessage;
+import com.example.daily.common.ResponseMessage;
 import com.example.daily.entity.User;
 import com.example.daily.entity.dto.UserDto;
 import com.example.daily.service.UserService;

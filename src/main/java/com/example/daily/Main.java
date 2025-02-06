@@ -1,6 +1,6 @@
 package com.example.daily;
 
-import com.example.daily.entity.People;
+import com.example.daily.entity.testwjx.People;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

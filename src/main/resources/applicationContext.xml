@@ -6,19 +6,19 @@
 
     <!-- 定义 Cat Bean -->
 <!--    在 XML 配置中，如果没有显式指定 name 属性，id 会被默认作为 name 的值-->
-    <bean id="cat" class="com.example.daily.entity.Cat">
+    <bean id="cat" class="com.example.daily.entity.testwjx.Cat">
         <!-- 设置 Cat 的 name 属性 -->
         <property name="name" value="Tom"/>
     </bean>
 
     <!-- 定义 Dog Bean -->
-    <bean id="dog" class="com.example.daily.entity.Dog">
+    <bean id="dog" class="com.example.daily.entity.testwjx.Dog">
         <!-- 设置 Dog 的 name 属性 -->
         <property name="name" value="Spike"/>
     </bean>
 
     <!-- 定义 People Bean -->
-    <bean id="people" class="com.example.daily.entity.People">
+    <bean id="people" class="com.example.daily.entity.testwjx.People">
         <!-- 设置 People 的 name 属性 -->
         <property name="name" value="张三"/>
         <!-- 注入 Cat 和 Dog Bean -->

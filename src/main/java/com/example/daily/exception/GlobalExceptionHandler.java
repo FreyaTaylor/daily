@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
-public class GlobalExceptionHandlerAdvice {
+public class GlobalExceptionHandler {
 
     @ExceptionHandler(ServiceException.class)
     public ResponseMessage<?> handleServiceException(ServiceException e) {
@@ -16,4 +16,4 @@ public class GlobalExceptionHandlerAdvice {
     public ResponseMessage<?> handleException(Exception e) {
         return ResponseMessage.error(500, "系统内部错误：" + e.getMessage());
     }
-}
+} 

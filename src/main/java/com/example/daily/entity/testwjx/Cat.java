@@ -1,4 +1,5 @@
-package com.example.daily.entity;
+package com.example.daily.entity.testwjx;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,9 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class People {
+public class Cat {
     private String name;
-    private Cat cat;
-    private Dog dog;
 
 }
